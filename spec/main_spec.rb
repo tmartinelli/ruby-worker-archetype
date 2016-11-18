@@ -1,3 +1,5 @@
+require 'main'
+
 describe Main do
-  pending 'Tests for Main class'
+  pending 'pending tests'
 end
