@@ -1,0 +1,30 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://qa-proc-bndes-tax.valepresente.net.br/proc-bndes-tax/tax
+    body:
+      encoding: UTF-8
+      string: '{"value":1.24,"effectiveStartDate":"2016-04-01T00:00:00-0300"}'
+    headers:
+      Content-Type:
+      - application/json
+  response:
+    status:
+      code: 201
+      message: Created
+    headers:
+      Server:
+      - Apache-Coyote/1.1
+      Location:
+      - https://qa-proc-bndes-tax.valepresente.net.br/proc-bndes-tax/tax/10060
+      Transfer-Encoding:
+      - chunked
+      Date:
+      - Wed, 20 Apr 2016 21:27:47 GMT
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Wed, 20 Apr 2016 21:27:45 GMT
+recorded_with: VCR 3.0.1
